@@ -1,0 +1,52 @@
+canvas {
+	display: block;
+	position: absolute;
+	margin: auto;
+	top: 0;
+	bottom: 0;
+	left: 0;
+  right: 0;
+  animation: levita 2s ease-in-out infinite alternate;
+}
+     html, body {
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      height: 100%;
+      background: linear-gradient(90deg, #f9f12a, #ffb52a, #f9f12a);
+      background-size: 300% 300%;
+      animation: fondoCielo 6s ease-in-out infinite;
+    }
+
+    @keyframes fondoCielo {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    @keyframes levita {
+      0% { transform: translateY(0px); }
+      100% { transform: translateY(-5px); }
+    }
+
+    .logo-container {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 10;
+      margin-left: 600px;
+    }
+    .flyp {
+      position: absolute;
+      top: 50%;
+      right: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 10;
+      margin-right: 300px;
+    }
+
+    .logo-container img {
+      width: 320px;
+      max-width: 90vw;
+    }
