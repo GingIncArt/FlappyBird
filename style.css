@@ -1,3 +1,4 @@
+
 canvas {
 	display: block;
 	position: absolute;
@@ -7,15 +8,26 @@ canvas {
 	left: 0;
   right: 0;
   animation: levita 2s ease-in-out infinite alternate;
+  border-radius: 20px;
 }
      html, body {
       margin: 0;
       padding: 0;
       overflow: hidden;
       height: 100%;
-      background: linear-gradient(90deg, #f9f12a, #ffb52a, #f9f12a);
-      background-size: 300% 300%;
+      background: url("https://e1.pxfuel.com/desktop-wallpaper/982/569/desktop-wallpaper-flappy-bird-backgrounds-flappy-bird.jpg");
       animation: fondoCielo 6s ease-in-out infinite;
+         /* No repetir la imagen */
+  background-repeat: no-repeat;
+
+  /* Centrar la imagen */
+  background-position: center center;
+
+  /* Hacer que cubra todo el viewport */
+  background-size: cover;
+
+  /* Opcional: fijar la imagen al hacer scroll */
+  background-attachment: fixed;
     }
 
     @keyframes fondoCielo {
